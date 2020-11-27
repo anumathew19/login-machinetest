@@ -1,0 +1,10 @@
+<div >
+    <div class="card-body">
+        <div *ngIf="loading" ></div>
+        <ul *ngIf="users">
+            <span *ngFor="let user of users" class="head"> 
+                <h4>   Welcome {{user.email}}</h4>
+            </span>
+        </ul>
+    </div>
+</div>
